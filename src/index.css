@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#app {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Aligns content vertically */
+  padding: 20px;
+  width: 30vw;
+  height: 50vh;
+}
+
+.item {
+  margin-bottom: 10px;
+  width: 100%; /* Ensures items fill the container width */
+}
+
+#market {
+  background-color: #0a0634;
+  color: white;
+  margin-right: 40px;
+  padding: 20px;
+  width: 30vw;
+  height: 50vh;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: Inter;
+  font-style: normal;
+  color: #0a0634;
+  font-weight: 700;
+  white-space: nowrap;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  width: 100%;
+  height: 35px;
+}
+input {
+  width: 100%;
+  height: 30px;
+}
+
+.submit {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.result {
+  font-size: 13px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  
+}
+.converted-amount{
+  color: #0F7E0D;
+}
+
+
+#app {
+  display: flex;
+}
+@media screen and (max-width: 616px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+  #market {
+    background-color: #0a0634;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 90vw;
+    height: 30vh;
+  }
+  .container {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    width: 90vw;
+    height: 60vh;
+  }
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
