@@ -61,9 +61,9 @@ function App() {
     } else if (sourceCurrency === "usr" && targetCurrency === "ind") {
       calculatedAmount = parsedAmount * exchangeRates.usdToInr;
     } else if (sourceCurrency === "aud" && targetCurrency === "usr") {
-      calculatedAmount = parsedAmount / exchangeRates.audToUsd;
-    } else if (sourceCurrency === "usr" && targetCurrency === "aud") {
       calculatedAmount = parsedAmount * exchangeRates.audToUsd;
+    } else if (sourceCurrency === "usr" && targetCurrency === "aud") {
+      calculatedAmount = parsedAmount / exchangeRates.audToUsd;
     }
 
     setConvertedAmount(calculatedAmount.toFixed(2));
